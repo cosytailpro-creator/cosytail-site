@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cosytail – Du confort pour se reposer. Du jeu pour s’éveiller.</title>
   <link rel="stylesheet" href="styles.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -20,6 +19,7 @@
           <li><a href="#faq">FAQ</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
+        <button id="cart-toggle" class="cart-btn">Panier <span id="cart-count">0</span></button>
       </nav>
     </div>
   </header>
@@ -36,22 +36,10 @@
   <section class="reassurance">
     <div class="container">
       <div class="reassurance-grid">
-        <div class="item">
-          <span class="icon">🚚</span>
-          <span>Livraison en France</span>
-        </div>
-        <div class="item">
-          <span class="icon">↩️</span>
-          <span>Retours sous 30 jours</span>
-        </div>
-        <div class="item">
-          <span class="icon">🔒</span>
-          <span>Paiement sécurisé</span>
-        </div>
-        <div class="item">
-          <span class="icon">🐾</span>
-          <span>Soutien orthopédique</span>
-        </div>
+        <div class="item"><span class="icon">🚚</span><span>Livraison en France</span></div>
+        <div class="item"><span class="icon">↩️</span><span>Retours sous 30 jours</span></div>
+        <div class="item"><span class="icon">🔒</span><span>Paiement sécurisé</span></div>
+        <div class="item"><span class="icon">🐾</span><span>Soutien orthopédique</span></div>
       </div>
     </div>
   </section>
@@ -61,20 +49,22 @@
       <h2>Les essentiels Cosytail</h2>
       <p class="subtitle">Un coin douillet et des moments de jeu, chaque jour.</p>
       <div class="product-grid">
-        <div class="product-card">
-          <img src="https://m.media-amazon.com/images/I/71JGXld-LrL._AC_UF1000,1000_QL80_.jpg" alt="Lit orthopédique Grand Format Cosytail" class="product-img">
+        <div class="product-card" data-id="lit" data-name="Lit orthopédique Grand Format" data-price="49.99" data-image="https://cdn.shopify.com/s/files/1/1100/4808/4299/files/01_lit_marron_salon.jpg?v=1793789685">
+          <img src="https://cdn.shopify.com/s/files/1/1100/4808/4299/files/01_lit_marron_salon.jpg?v=1793789685" alt="Lit orthopédique" class="product-img">
           <div class="product-info">
             <h3>Lit orthopédique Grand Format</h3>
-            <p>Soutien & Chaleur. Idéal pour les chiens seniors et de grande taille. Mousse orthopédique + housse douce qui conserve la chaleur.</p>
-            <a href="#" class="btn-secondary">Découvrir le lit</a>
+            <p class="price">49,99 €</p>
+            <p>Soutien & Chaleur. Idéal pour les chiens seniors et de grande taille.</p>
+            <button class="btn add-to-cart">Ajouter au panier</button>
           </div>
         </div>
-        <div class="product-card">
-          <img src="https://photos-us.bazaarvoice.com/photo/2/cGhvdG86bXJjaGV3eQ/2c3e1b54-7008-5d2f-b9d9-6a0ca18595e8" alt="Puzzle interactif 2 étages Cosytail" class="product-img">
+        <div class="product-card" data-id="puzzle" data-name="Puzzle interactif 2 étages" data-price="21.99" data-image="https://cdn.shopify.com/s/files/1/1100/4808/4299/files/IMG_3173.jpg?v=1793826704">
+          <img src="https://cdn.shopify.com/s/files/1/1100/4808/4299/files/IMG_3173.jpg?v=1793826704" alt="Puzzle interactif" class="product-img">
           <div class="product-info">
             <h3>Puzzle interactif 2 étages</h3>
-            <p>Mangeoire Slow Feeder + Jeu d’intelligence. Stimule l’esprit de votre chien tout en ralentissant la prise de nourriture.</p>
-            <a href="#" class="btn-secondary">Découvrir le puzzle</a>
+            <p class="price">21,99 €</p>
+            <p>Mangeoire Slow Feeder + Jeu d’intelligence pour stimuler votre chien.</p>
+            <button class="btn add-to-cart">Ajouter au panier</button>
           </div>
         </div>
       </div>
@@ -86,15 +76,15 @@
       <h2>Pourquoi Cosytail ?</h2>
       <div class="about-grid">
         <div class="about-text">
-          <p>Chez Cosytail, nous croyons que chaque chien mérite un sommeil réparateur et des moments de jeu stimulants. Nos produits sont pensés pour accompagner votre compagnon au quotidien.</p>
+          <p>Chez Cosytail, nous croyons que chaque chien mérite un sommeil réparateur et des moments de jeu stimulants.</p>
           <ul>
-            <li>Soutien orthopédique réel pour les articulations</li>
+            <li>Soutien orthopédique réel</li>
             <li>Matières douces qui conservent la chaleur</li>
-            <li>Entretien simple au quotidien</li>
-            <li>Conçus pour les chiens seniors et de grande taille</li>
+            <li>Entretien simple</li>
+            <li>Conçus pour les chiens seniors</li>
           </ul>
         </div>
-        <img src="https://m.media-amazon.com/images/I/71UWPGl3COL._AC_UF1000,1000_QL80_.jpg" alt="Chien confortable sur lit Cosytail" class="about-img">
+        <img src="https://cdn.shopify.com/s/files/1/1100/4808/4299/files/01_lit_marron_salon.jpg?v=1793789685" alt="Lit Cosytail" class="about-img">
       </div>
     </div>
   </section>
@@ -103,18 +93,9 @@
     <div class="container">
       <h2>Questions fréquentes</h2>
       <div class="faq-list">
-        <div class="faq-item">
-          <h3>Quelle taille de lit choisir ?</h3>
-          <p>Mesurez votre chien allongé (museau à base de queue) et ajoutez 10-15 cm. En cas de doute, prenez la taille au-dessus.</p>
-        </div>
-        <div class="faq-item">
-          <h3>La housse est-elle lavable ?</h3>
-          <p>Oui, seule la housse se lave. Elle se retire facilement grâce au zip caché.</p>
-        </div>
-        <div class="faq-item">
-          <h3>Quels sont les délais de livraison ?</h3>
-          <p>3 à 7 jours ouvrés après expédition en France métropolitaine.</p>
-        </div>
+        <div class="faq-item"><h3>Quelle taille de lit choisir ?</h3><p>Mesurez votre chien allongé et ajoutez 10-15 cm.</p></div>
+        <div class="faq-item"><h3>La housse est-elle lavable ?</h3><p>Oui, elle se retire facilement.</p></div>
+        <div class="faq-item"><h3>Délais de livraison ?</h3><p>3 à 7 jours ouvrés en France.</p></div>
       </div>
     </div>
   </section>
@@ -122,20 +103,31 @@
   <section id="contact" class="contact">
     <div class="container">
       <h2>Contact</h2>
-      <p>Une question ? Écrivez-nous à <a href="mailto:cosytailpro@gmail.com">cosytailpro@gmail.com</a></p>
-      <p>Réponse sous 24 à 48 h ouvrées.</p>
+      <p>Une question ? <a href="mailto:cosytailpro@gmail.com">cosytailpro@gmail.com</a></p>
     </div>
   </section>
 
   <footer>
     <div class="container">
       <p>&copy; 2026 Cosytail. Tous droits réservés.</p>
-      <div class="footer-links">
-        <a href="#apropos">À propos</a>
-        <a href="#faq">FAQ</a>
-        <a href="#contact">Contact</a>
-      </div>
     </div>
   </footer>
+
+  <!-- Cart Sidebar -->
+  <div id="cart-sidebar" class="cart-sidebar">
+    <div class="cart-header">
+      <h3>Votre panier</h3>
+      <button id="close-cart">&times;</button>
+    </div>
+    <div id="cart-items"></div>
+    <div class="cart-footer">
+      <p>Total : <span id="cart-total">0,00 €</span></p>
+      <button id="checkout-btn" class="btn">Passer commande</button>
+      <p class="note">Vous serez redirigé vers Shopify pour finaliser le paiement.</p>
+    </div>
+  </div>
+  <div id="cart-overlay"></div>
+
+  <script src="cart.js"></script>
 </body>
 </html>

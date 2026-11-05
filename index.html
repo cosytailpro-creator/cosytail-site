@@ -6,25 +6,27 @@
   <title>Cosytail – Du confort pour se reposer. Du jeu pour s’éveiller.</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
-    <nav>
-      <div class="logo">Cosytail</div>
-      <ul>
-        <li><a href="#accueil">Accueil</a></li>
-        <li><a href="#produits">Produits</a></li>
-        <li><a href="#apropos">À propos</a></li>
-        <li><a href="#faq">FAQ</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+    <div class="container">
+      <nav>
+        <div class="logo">Cosytail</div>
+        <ul>
+          <li><a href="#accueil">Accueil</a></li>
+          <li><a href="#produits">Produits</a></li>
+          <li><a href="#apropos">À propos</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <section id="accueil" class="hero">
-    <div class="hero-content">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
       <h1>Du confort pour se reposer.<br>Du jeu pour s’éveiller.</h1>
       <p>Des essentiels pensés pour le bien-être quotidien de votre chien.</p>
       <a href="#produits" class="btn">Découvrir les essentiels</a>
@@ -32,72 +34,107 @@
   </section>
 
   <section class="reassurance">
-    <div class="item">Livraison en France</div>
-    <div class="item">Retours sous 30 jours</div>
-    <div class="item">Paiement sécurisé</div>
-    <div class="item">Soutien orthopédique</div>
+    <div class="container">
+      <div class="reassurance-grid">
+        <div class="item">
+          <span class="icon">🚚</span>
+          <span>Livraison en France</span>
+        </div>
+        <div class="item">
+          <span class="icon">↩️</span>
+          <span>Retours sous 30 jours</span>
+        </div>
+        <div class="item">
+          <span class="icon">🔒</span>
+          <span>Paiement sécurisé</span>
+        </div>
+        <div class="item">
+          <span class="icon">🐾</span>
+          <span>Soutien orthopédique</span>
+        </div>
+      </div>
+    </div>
   </section>
 
   <section id="produits" class="products">
-    <h2>Les essentiels Cosytail</h2>
-    <p class="subtitle">Un coin douillet et des moments de jeu, chaque jour.</p>
-    <div class="product-grid">
-      <div class="product-card">
-        <div class="product-image" style="background: linear-gradient(135deg, #f5e6d3, #e8d5c4);"></div>
-        <h3>Lit orthopédique Grand Format</h3>
-        <p>Soutien & Chaleur. Idéal pour les chiens seniors et de grande taille.</p>
-        <a href="#" class="btn-secondary">Découvrir</a>
-      </div>
-      <div class="product-card">
-        <div class="product-image" style="background: linear-gradient(135deg, #d4e6f5, #c4d5e8);"></div>
-        <h3>Puzzle interactif 2 étages</h3>
-        <p>Mangeoire Slow Feeder + Jeu d’intelligence pour stimuler votre chien.</p>
-        <a href="#" class="btn-secondary">Découvrir</a>
+    <div class="container">
+      <h2>Les essentiels Cosytail</h2>
+      <p class="subtitle">Un coin douillet et des moments de jeu, chaque jour.</p>
+      <div class="product-grid">
+        <div class="product-card">
+          <img src="https://m.media-amazon.com/images/I/71JGXld-LrL._AC_UF1000,1000_QL80_.jpg" alt="Lit orthopédique Grand Format Cosytail" class="product-img">
+          <div class="product-info">
+            <h3>Lit orthopédique Grand Format</h3>
+            <p>Soutien & Chaleur. Idéal pour les chiens seniors et de grande taille. Mousse orthopédique + housse douce qui conserve la chaleur.</p>
+            <a href="#" class="btn-secondary">Découvrir le lit</a>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="https://photos-us.bazaarvoice.com/photo/2/cGhvdG86bXJjaGV3eQ/2c3e1b54-7008-5d2f-b9d9-6a0ca18595e8" alt="Puzzle interactif 2 étages Cosytail" class="product-img">
+          <div class="product-info">
+            <h3>Puzzle interactif 2 étages</h3>
+            <p>Mangeoire Slow Feeder + Jeu d’intelligence. Stimule l’esprit de votre chien tout en ralentissant la prise de nourriture.</p>
+            <a href="#" class="btn-secondary">Découvrir le puzzle</a>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
   <section id="apropos" class="about">
-    <h2>Pourquoi Cosytail ?</h2>
-    <div class="about-content">
-      <p>Chez Cosytail, nous croyons que chaque chien mérite un sommeil réparateur et des moments de jeu stimulants. Nos produits sont pensés pour accompagner votre compagnon au quotidien.</p>
-      <ul>
-        <li>Soutien orthopédique réel pour les articulations</li>
-        <li>Matières douces qui conservent la chaleur</li>
-        <li>Entretien simple au quotidien</li>
-        <li>Conçus pour les chiens seniors et de grande taille</li>
-      </ul>
+    <div class="container">
+      <h2>Pourquoi Cosytail ?</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>Chez Cosytail, nous croyons que chaque chien mérite un sommeil réparateur et des moments de jeu stimulants. Nos produits sont pensés pour accompagner votre compagnon au quotidien.</p>
+          <ul>
+            <li>Soutien orthopédique réel pour les articulations</li>
+            <li>Matières douces qui conservent la chaleur</li>
+            <li>Entretien simple au quotidien</li>
+            <li>Conçus pour les chiens seniors et de grande taille</li>
+          </ul>
+        </div>
+        <img src="https://m.media-amazon.com/images/I/71UWPGl3COL._AC_UF1000,1000_QL80_.jpg" alt="Chien confortable sur lit Cosytail" class="about-img">
+      </div>
     </div>
   </section>
 
   <section id="faq" class="faq">
-    <h2>Questions fréquentes</h2>
-    <div class="faq-item">
-      <h3>Quelle taille de lit choisir ?</h3>
-      <p>Mesurez votre chien allongé (museau à base de queue) et ajoutez 10-15 cm. En cas de doute, prenez la taille au-dessus.</p>
-    </div>
-    <div class="faq-item">
-      <h3>La housse est-elle lavable ?</h3>
-      <p>Oui, seule la housse se lave. Elle se retire facilement grâce au zip caché.</p>
-    </div>
-    <div class="faq-item">
-      <h3>Quels sont les délais de livraison ?</h3>
-      <p>3 à 7 jours ouvrés après expédition en France métropolitaine.</p>
+    <div class="container">
+      <h2>Questions fréquentes</h2>
+      <div class="faq-list">
+        <div class="faq-item">
+          <h3>Quelle taille de lit choisir ?</h3>
+          <p>Mesurez votre chien allongé (museau à base de queue) et ajoutez 10-15 cm. En cas de doute, prenez la taille au-dessus.</p>
+        </div>
+        <div class="faq-item">
+          <h3>La housse est-elle lavable ?</h3>
+          <p>Oui, seule la housse se lave. Elle se retire facilement grâce au zip caché.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Quels sont les délais de livraison ?</h3>
+          <p>3 à 7 jours ouvrés après expédition en France métropolitaine.</p>
+        </div>
+      </div>
     </div>
   </section>
 
   <section id="contact" class="contact">
-    <h2>Contact</h2>
-    <p>Une question ? Écrivez-nous à <a href="mailto:cosytailpro@gmail.com">cosytailpro@gmail.com</a></p>
-    <p>Réponse sous 24 à 48 h ouvrées.</p>
+    <div class="container">
+      <h2>Contact</h2>
+      <p>Une question ? Écrivez-nous à <a href="mailto:cosytailpro@gmail.com">cosytailpro@gmail.com</a></p>
+      <p>Réponse sous 24 à 48 h ouvrées.</p>
+    </div>
   </section>
 
   <footer>
-    <p>&copy; 2026 Cosytail. Tous droits réservés.</p>
-    <div class="footer-links">
-      <a href="#apropos">À propos</a>
-      <a href="#faq">FAQ</a>
-      <a href="#contact">Contact</a>
+    <div class="container">
+      <p>&copy; 2026 Cosytail. Tous droits réservés.</p>
+      <div class="footer-links">
+        <a href="#apropos">À propos</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+      </div>
     </div>
   </footer>
 </body>
